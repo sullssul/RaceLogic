@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements IBaseGpsListener 
         if (isGeoDisabled()) {
             CustomDialogFragment dialog = new CustomDialogFragment();
             dialog.show(getSupportFragmentManager(), "custom");
-
         }
 
         LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
@@ -99,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements IBaseGpsListener 
         int nCurrentSpeed = 0;
 
         if (location != null) {
-            location.setUseMetricunits(this.useMetricUnits());
+            location.setUseMetricUnits(this.useMetricUnits());
             nCurrentSpeed = (int) location.getSpeed();
         } else {
             txtCurrentSpeed.setText("\t" + 0);

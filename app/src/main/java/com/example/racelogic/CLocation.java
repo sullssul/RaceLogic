@@ -4,12 +4,7 @@ import android.location.Location;
 
 public class CLocation extends Location {
 
-    private boolean bUseMetricUnits = false;
-
-    public CLocation(Location location)
-    {
-        this(location, true);
-    }
+    private boolean bUseMetricUnits;
 
     public CLocation(Location location, boolean bUseMetricUnits) {
         super(location);
@@ -22,9 +17,9 @@ public class CLocation extends Location {
         return !this.bUseMetricUnits;
     }
 
-    public void setUseMetricunits(boolean bUseMetricUntis)
+    public void setUseMetricUnits(boolean bUseMetricUnits)
     {
-        this.bUseMetricUnits = bUseMetricUntis;
+        this.bUseMetricUnits = bUseMetricUnits;
     }
 
     @Override
