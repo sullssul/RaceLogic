@@ -11,7 +11,6 @@ import android.content.Context;
 
 
 import android.content.pm.PackageManager;
-import android.content.res.Configuration;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
