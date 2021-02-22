@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="50dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -23,9 +22,10 @@
         android:id="@+id/txtMetricUnits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtCurrentSpeed"
-        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/txtCurrentSpeed"
         android:text="@string/km_h"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="50sp" />
@@ -35,31 +35,23 @@
         android:id="@+id/chkMetricUnits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/chkDarkMode"
-        android:layout_alignStart="@+id/txtMetricUnits"
+        android:layout_above="@+id/chkHeadUpModeOn"
+        android:layout_alignStart="@+id/txtCurrentSpeed"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="5dp"
         android:text="@string/use_m_h"
-        android:textSize="20sp" />
-
-    <CheckBox
-        android:id="@+id/chkDarkMode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/chkHeadUpModeOn"
-        android:layout_alignStart="@+id/txtMetricUnits"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"
-        android:text="@string/dark_theme"
         android:textSize="20sp" />
 
     <CheckBox
         android:id="@+id/chkHeadUpModeOn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/txtMetricUnits"
+        android:layout_alignStart="@+id/txtCurrentSpeed"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
         android:text="@string/head_up_mode"
         android:textSize="20sp" />
 
