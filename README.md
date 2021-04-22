@@ -11,7 +11,7 @@
 - замер разгона 0 - 100 км/ч
 - прочие замеры из автоспорта (возможно даже как отдельное приложение)
 
-===================================================================================================================
+==========================================================================================
 # RaceLogic
 A program for measuring speed using the built-in gps phone (speedometer in short).
 It is possible to mirror the speed so that you can put it under the windshield and get a kind of analogue of the projection.
